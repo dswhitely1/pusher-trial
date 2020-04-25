@@ -1,0 +1,33 @@
+{
+  "name": "pusher-trial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dswhitely1/pusher-trial.git"
+  },
+  "keywords": [],
+  "author": "Donald Whitely <don@donwhitely.com> (https://www.donwhitely.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dswhitely1/pusher-trial/issues"
+  },
+  "homepage": "https://github.com/dswhitely1/pusher-trial#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "morgan": "^1.10.0",
+    "pusher": "^3.0.1",
+    "pusher-js": "^5.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
