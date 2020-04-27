@@ -20,7 +20,7 @@ const pusher = new Pusher({
     key: process.env.APP_KEY,
     secret: process.env.APP_SECRET,
     cluster: process.env.APP_CLUSTER,
-    encrypted: true
+    useTLS: true
 });
 
 app.set('PORT', process.env.PORT || 5000);
@@ -29,6 +29,6 @@ app.post('/message', (req, res) => {
     const payload = req.body;
     pusher.trigger('chat', 'message', payload);
     res.send(payload);
-})
+});
 
 app.listen(app.get('PORT'), () => console.log(`Listening at ${app.get('PORT')}`));
